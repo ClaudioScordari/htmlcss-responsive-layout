@@ -271,7 +271,7 @@ main section:nth-of-type(5) .my-row .my-col:last-child>div:first-child {
 main section:nth-of-type(5) .my-row .my-col:last-child>div:first-child div {
     color: #9792E4;
     position: absolute;
-    right: -40px;
+    right: 100px;
     top: -20px;
 }
 
@@ -294,8 +294,47 @@ main section:nth-of-type(5) .my-row .my-col:last-child a {
     color: white;
 }
 
+/* sesta sezione */
+main section:nth-of-type(6) {
+    padding: 40px 0;
+}
 
+main section:nth-of-type(6) .container>* {
+    margin-bottom: 25px;
+}
 
+main section:nth-of-type(6) h4 {
+    color: lightgrey;
+    font-size: 20px;
+}
+
+main section:nth-of-type(6) h3 {
+    color: white;
+    font-size: 35px;
+}
+
+main section:nth-of-type(6) h2 {
+    color: orange;
+    font-size: 55px;
+}
+
+main section:nth-of-type(6) p {
+    color: white;
+}
+
+main section:nth-of-type(6) a:not(.copyright) {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    color: #9792E4;
+    background-color: white;
+    padding: 20px 55px;
+}
+
+main section:nth-of-type(6) span a:last-of-type {
+    color: white;
+}
 
 /* FOOTER */
 footer {
