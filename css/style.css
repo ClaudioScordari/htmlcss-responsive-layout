@@ -201,13 +201,42 @@ main section:nth-child(3)>.container>* {
 
 /* quarta sezione */
 main section:nth-of-type(4) {
-    padding-bottom: 15px;
+    padding: 30px 0;
+}
+
+main section:nth-child(4) h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 50px;
 }
 
 main section:nth-of-type(4) .my-col {
+    text-align: left;
+    color: #9792E4;
+    padding: 30px;
     margin-top: 15px;
     background-color: white;
     border-radius: 20px;
+}
+
+main section:nth-of-type(4) .my-col h3 {
+    color: #9792E4;
+    font-size: 45px;
+}
+
+main section:nth-of-type(4) .my-col h4 {
+    font-size: 20px;
+    color: #9792E4;
+}
+
+main section:nth-of-type(4) .my-col p {
+    color: grey;
+}
+
+main section:nth-of-type(4) .my-col a {
+    padding: 10px 40px;
+    background-color: #9792E4;
+    color: white;
 }
 
 /* quinta sezione */
