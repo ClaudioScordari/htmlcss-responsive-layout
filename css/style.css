@@ -19,6 +19,11 @@ html {
     padding-right: 20px;
 }
 
+:root {
+    --color-blue: #0084FD;
+    --color-white: #FFFFFF;
+}
+
 ul li {
     display: inline-block;
 }
@@ -30,6 +35,13 @@ main section:nth-of-type(2n) {
 .button {
     border-radius: 20px;
     padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--color-blue);
 }
 
 /* HEADER */
@@ -43,7 +55,7 @@ header .container-header {
 }
 
 header {
-    background-color: #0084FD;
+    background-color: var(--color-blue);
     padding: 15px 0;
 }
 
@@ -54,8 +66,8 @@ header nav {
 header li a {
     text-decoration: none;
     color: white;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px 15px;
 }
 
@@ -72,6 +84,27 @@ main section:nth-of-type(1) .my-col {
     background-color: #B5DDFF;
     border-radius: 20px;
     margin: 15px 0;
+}
+
+main section:nth-of-type(1) .special-col div:first-child * {
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(1) .special-col {
+    padding: 30px 15px 0 15px;
+}
+
+main section:nth-of-type(1) p {
+    line-height: 25px;
+}
+
+main section:nth-of-type(1) p+a {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+main section:nth-of-type(1) .special-col div:last-child img {
+    width: 100%;
 }
 
 /* quarta sezione */
@@ -114,6 +147,14 @@ footer {
         width: calc(((100% / 3) * 2) - 30px);
     }
 
+    main section:nth-of-type(1) .special-col * {
+        text-align: left;
+    }
+
+    main section:nth-of-type(1) .special-col div:last-child {
+        width: 50%;
+    }
+
     /* quarta sezione */
     main section:nth-of-type(4) .my-col {
         width: calc((100% / 2) - 30px);
@@ -146,6 +187,24 @@ footer {
 
     header .hamburger-button {
         display: none;
+    }
+
+    /* prima sezione */
+    main section:nth-of-type(1) .special-col {
+        display: flex;
+    }
+
+    main section:nth-of-type(1) .special-col div:first-child {
+        width: 60%;
+    }
+
+    main section:nth-of-type(1) .special-col div:first-child a {
+        padding: 10px 70px;
+    }
+
+    main section:nth-of-type(1) .special-col div:last-child {
+        width: 40%;
+        align-self: flex-end;
     }
 
     /* seconda sezione */
