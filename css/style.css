@@ -240,9 +240,62 @@ main section:nth-of-type(4) .my-col a {
 }
 
 /* quinta sezione */
+
+/* prima colonna */
 main section:nth-of-type(5) {
-    padding-top: 20px;
+    padding: 50px 0;
 }
+
+main section:nth-of-type(5) h2 {
+    font-size: 35px;
+    color: #9792E4;
+}
+
+main section:nth-of-type(5) p {
+    line-height: 30px;
+}
+
+main section:nth-of-type(5) p+p {
+    margin-top: 50px;
+}
+
+/* seconda colonna */
+main section:nth-of-type(5) .my-row {
+    text-align: left;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child>div:first-child {
+    position: relative;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child>div:first-child div {
+    color: #9792E4;
+    position: absolute;
+    right: -40px;
+    top: -20px;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child>div:first-child div i {
+    font-size: 70px;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child>* {
+    margin-top: 30px;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child h3 {
+    color: #9792E4;
+    font-size: 28px;
+}
+
+main section:nth-of-type(5) .my-row .my-col:last-child a {
+    display: inline-block;
+    background-color: #9792E4;
+    color: white;
+}
+
+
+
 
 /* FOOTER */
 footer {
@@ -304,6 +357,16 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    main section:nth-of-type(5) .my-col:first-child {
+        width: 60%;
+    }
+
+    main section:nth-of-type(5) .my-col:last-child {
+        padding-left: 30px;
+        width: 40%;
+    }
+
 }
 
 /* CSS DESKTOP */
@@ -371,5 +434,24 @@ footer {
     /* quarta sezione */
     main section:nth-of-type(4) .my-col {
         width: calc((100% / 3) - 30px);
+    }
+
+    /* quinta sezione */
+    main section:nth-of-type(5) .my-row {
+        padding: 0 100px;
+    }
+
+    main section:nth-of-type(5) .my-row .my-col:last-child {
+        text-align: left;
+        width: 25%;
+    }
+
+    main section:nth-of-type(5) h2 {
+        font-size: 50px;
+    }
+
+    main section:nth-of-type(5) p {
+        font-size: 18px;
+        line-height: 40px;
     }
 }
