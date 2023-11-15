@@ -50,8 +50,11 @@ p {
 }
 
 h3 {
-    color: #0084FD;
     font-size: 20px;
+}
+
+img {
+    width: 100%;
 }
 
 /* HEADER */
@@ -109,18 +112,62 @@ main section:nth-of-type(1) .special-col~.my-col {
     padding: 30px;
 }
 
+main section:nth-of-type(1) .special-col h3 {
+    color: #0084FD;
+}
+
 main section:nth-of-type(1) p+a {
     background-color: var(--color-blue);
     color: white;
 }
 
-main section:nth-of-type(1) .special-col div:last-child img {
-    width: 100%;
-}
-
 /* seconda colonna + regola generale della sezione */
 main section:nth-of-type(1) .my-col:not(.my-col.special-col) h3 {
     margin: 20px 0;
+    color: var(--color-blue);
+}
+
+/* seconda sezione */
+main section:nth-of-type(2) h3 {
+    color: white;
+    margin: 30px 0;
+}
+
+main section:nth-of-type(2) p {
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(2) .my-col:last-child h3 {
+    color: black;
+}
+
+main section:nth-of-type(2) .my-col:last-child div div:first-child {
+    margin: 25px;
+}
+
+main section:nth-of-type(2) .my-col:last-child a {
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #9792E4;
+    line-height: 50px;
+    color: black;
+}
+
+main section:nth-of-type(2) .my-col:last-child {
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+main section:nth-of-type(2) .my-col:last-child div {
+    padding: 15px;
+}
+
+main section:nth-of-type(2) .my-col:last-child>div {
+    border-radius: 20px;
+    background-color: white;
 }
 
 /* quarta sezione */
@@ -228,12 +275,25 @@ footer {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        padding: 20px;
+        padding: 50px 100px;
+    }
+
+    main section:nth-of-type(2) .my-col:first-child {
+        width: 50%;
+    }
+
+    main section:nth-of-type(2) .my-col:last-child {
+        width: 50%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    main section:nth-of-type(2) .my-col:last-child>div {
+        padding: 30px;
     }
 
     /* quarta sezione */
     main section:nth-of-type(4) .my-col {
         width: calc((100% / 3) - 30px);
     }
-
 }
