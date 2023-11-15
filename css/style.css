@@ -55,6 +55,21 @@ h3 {
 
 img {
     width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #9792E4;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.square-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 /* HEADER */
@@ -170,6 +185,20 @@ main section:nth-of-type(2) .my-col:last-child>div {
     background-color: white;
 }
 
+/* terza sezione */
+main section:nth-child(3) {
+    padding: 40px 0;
+}
+
+main section:nth-child(3) h2 {
+    color: #9792E4;
+    font-size: 30px;
+}
+
+main section:nth-child(3)>.container>* {
+    margin-bottom: 30px;
+}
+
 /* quarta sezione */
 main section:nth-of-type(4) {
     padding-bottom: 15px;
@@ -216,6 +245,24 @@ footer {
 
     main section:nth-of-type(1) .special-col div:last-child {
         width: 50%;
+    }
+
+
+    /* terza sezione */
+    main section:nth-child(3) .card {
+
+        display: flex;
+        align-items: center;
+    }
+
+    main section:nth-child(3) .card div:first-child {
+        width: 30%;
+    }
+
+    main section:nth-child(3) .card div:last-child {
+        padding-left: 30px;
+        text-align: left;
+        width: 70%;
     }
 
     /* quarta sezione */
